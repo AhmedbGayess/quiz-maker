@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>The Quiz Maker</h1>
+        <h3>Make a Quiz and Challenge Your Friends!</h3>
+    </header>
+    <div id="navbar">
+        <a href="index.html">Quiz</a>
+        <a href="add.html">Add Questions</a>
+        <a href="questions.html">My Questions</a>
+    </div>
+
+    <button id="start">Start Quiz!</button>
+
+    <div id="timer" class="hide">
+        <p id="time"></p>
+    </div>
+
+    <div id="container"></div>
+
+    <div id="no-questions" class="hide">
+        <p>No Questions To Show! <a href="add.html">Click here to add questions</a></p>
+    </div>
+    
+    
+    <script src="scripts/uuid.js"></script>
+    <script src="scripts/questions.js"></script>
+    <script src="scripts/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <header>
+        <h1>The Quiz Maker</h1>
+        <h3>Make a Quiz and Challenge Your Friends!</h3>
+    </header>
+
+    <div id="navbar">
+        <a href="index.html">Quiz</a>
+        <a href="">Add Questions</a>
+        <a href="questions.html">My Questions</a>
+    </div>
+
+    <form id="add-form">
+        <p class="proposition">Each Question can have from 2 to 4 propsitions, but only one can be correct!</p>
+        <label for="add-question" class="answer-label">The question you want to add</label>
+        <input type="text" id="add-question" class="answer-input" placeholder="What's the question you want to add?" autocomplete="off" required>
+        <label for="answer-1" class="answer-label">Answer 1</label>
+        <input type="text" id="answer-1" class="answer-input answer-choice" placeholder="What's the first propostion?" autocomplete="off" required>
+        <label for="answer-2" class="answer-label">Answer 2</label>
+        <input type="text" id="answer-2" class="answer-input answer-choice" placeholder="What's the second propostion?" autocomplete="off" required>
+        <label for="answer-3" class="answer-label">Answer 3</label>
+        <input type="text" id="answer-3" class="answer-input answer-choice" placeholder="What's the third propostion?" autocomplete="off">
+        <label for="answer-4" class="answer-label">Answer 4</label>
+        <input type="text" id="answer-4" class="answer-input answer-choice" placeholder="What's the fourth propostion?" autocomplete="off">
+
+        <label for="right-answer" class="answer-label">What's the number of the right answer?</label>
+        <select id="right-answer" class="answer-input select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+
+        <button id="add">Add Question</button>
+
+    </form>
+
+    <div id="added">
+        <p>Question Added !</p>
+    </div>
+
+    <script src="scripts/uuid.js"></script>
+    <script src="scripts/questions.js"></script>
+    <script src="scripts/add.js"></script>
+
+
+</body>
+
+</html>
